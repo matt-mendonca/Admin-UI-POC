@@ -85,15 +85,15 @@
 
             .left-off-canvas-menu li,
             .left-off-canvas-menu a,
+            .left-off-canvas-menu i,
             .left-off-canvas-menu li:hover a:hover,
             .left-off-canvas-menu li:hover a:focus,
             .left-off-canvas-menu li:focus a:hover,
             .left-off-canvas-menu li:focus a:focus,
-            .left-off-canvas-menu li:hover i:first-child,
-            .left-off-canvas-menu li:focus i:first-child,
-            .left-off-canvas-menu i:last-child:hover,
-            .left-off-canvas-menu i:last-child:focus,
-            .left-off-canvas-menu.expanded .top-menu li.active:hover i:first-child {
+            .left-off-canvas-menu li:hover i:last-child:hover,
+            .left-off-canvas-menu li:hover i:last-child:focus,
+            .left-off-canvas-menu li:focus i:last-child:hover,
+            .left-off-canvas-menu li:focus i:last-child:focus {
                 color: #fff;
             }
             
@@ -101,11 +101,10 @@
             .left-off-canvas-menu li:hover a:focus,
             .left-off-canvas-menu li:focus a:hover,
             .left-off-canvas-menu li:focus a:focus,
-            .left-off-canvas-menu li:hover i:first-child,
-            .left-off-canvas-menu li:focus i:first-child,
-            .left-off-canvas-menu i:last-child:hover,
-            .left-off-canvas-menu i:last-child:focus,
-            .left-off-canvas-menu.expanded .top-menu li.active:hover i:first-child {
+            .left-off-canvas-menu li:hover i:last-child:hover,
+            .left-off-canvas-menu li:hover i:last-child:focus,
+            .left-off-canvas-menu li:focus i:last-child:hover,
+            .left-off-canvas-menu li:focus i:last-child:focus {
                 text-shadow: none;
             }
             
@@ -115,16 +114,17 @@
                 transition: background 0.5s;
             }
             
-            .left-off-canvas-menu:hover li,
-            .left-off-canvas-menu:hover a {
-               color: transparent;
-
-               text-shadow: 0 0 2px #ccc; 
-            }
-            
             .left-off-canvas-menu li:hover,
             .left-off-canvas-menu li:focus {
                 background: #08c;
+            }
+            
+            .left-off-canvas-menu li:hover a,
+            .left-off-canvas-menu li:focus a, 
+            .left-off-canvas-menu li:hover i:last-child,
+            .left-off-canvas-menu li:focus i:last-child {
+                color: transparent;
+                text-shadow: 0 0 2px #fff;
             }
 
             .left-off-canvas-menu a {
