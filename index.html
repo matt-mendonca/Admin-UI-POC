@@ -1,0 +1,77 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Admin</title>
+        <link rel="stylesheet" href="css/foundation.css" />
+        <link rel="stylesheet" href="css/fonts/foundation-icons.css" />
+        <link rel="stylesheet" href="css/app.css" />
+        <script src="js/vendor/modernizr.js"></script>
+    </head>
+    <body>
+        <div class="off-canvas-wrap">
+            <div class="inner-wrap">
+                <aside class="left-off-canvas-menu">
+                    <ul class="top-menu">
+                        <li class="content-link">
+                            <i class="fi-page"></i>
+                            <a data-sub-menu="content">Content</a>
+                            <i class="fi-play"></i>
+                        </li>
+                        <li class="users-link">
+                            <i class="fi-torsos"></i>
+                            <a data-sub-menu="users">Users</a>
+                            <i class="fi-play"></i>
+                        </li>
+                        <li class="settings-link">
+                            <i class="fi-widget"></i>
+                            <a data-sub-menu="settings">Settings</a>
+                            <i class="fi-play"></i>
+                        </li>
+                    </ul>
+                    <ul class="sub-menu content">
+                        <li>
+                            <i class="fi-page-add"></i>
+                            <a data-sub-menu="content">Add Content</a>
+                        </li>
+                        <li>
+                            <i class="fi-page"></i>
+                            <a data-sub-menu="content">Pages</a>
+                        </li>
+                        <li>
+                            <i class="fi-page-copy"></i>
+                            <a data-sub-menu="content">Archives</a>
+                        </li>
+                    </ul>
+                    <ul class="sub-menu users">
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Archives</a></li>
+                    </ul>
+                    <ul class="sub-menu settings">
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Archives</a></li>
+                    </ul>
+                </aside>
+
+                <!-- main content goes here -->
+                <div class="main-content">
+                    <h2>
+                        <a class="left-off-canvas-toggle"><i class="fi-list"></i></a>
+                    </h2>
+
+                    <p>Test</p>
+
+                    <a class="exit-off-canvas"></a>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/foundation.min.js"></script>
+        <script src="js/app.js"></script>
+        <script>
+            $(document).foundation();
+        </script>
+    </body>
+</html>
