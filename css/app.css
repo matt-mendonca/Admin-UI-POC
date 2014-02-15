@@ -84,13 +84,42 @@
         }
 
             .left-off-canvas-menu li,
-            .left-off-canvas-menu a {
-               color: #fff; 
+            .left-off-canvas-menu a,
+            .left-off-canvas-menu li:hover a:hover,
+            .left-off-canvas-menu li:hover a:focus,
+            .left-off-canvas-menu li:focus a:hover,
+            .left-off-canvas-menu li:focus a:focus,
+            .left-off-canvas-menu li:hover i:first-child,
+            .left-off-canvas-menu li:focus i:first-child,
+            .left-off-canvas-menu i:last-child:hover,
+            .left-off-canvas-menu i:last-child:focus,
+            .left-off-canvas-menu.expanded .top-menu li.active:hover i:first-child {
+                color: #fff;
+            }
+            
+            .left-off-canvas-menu li:hover a:hover,
+            .left-off-canvas-menu li:hover a:focus,
+            .left-off-canvas-menu li:focus a:hover,
+            .left-off-canvas-menu li:focus a:focus,
+            .left-off-canvas-menu li:hover i:first-child,
+            .left-off-canvas-menu li:focus i:first-child,
+            .left-off-canvas-menu i:last-child:hover,
+            .left-off-canvas-menu i:last-child:focus,
+            .left-off-canvas-menu.expanded .top-menu li.active:hover i:first-child {
+                text-shadow: none;
             }
             
             .left-off-canvas-menu li {
-                transition: background 0.5s;
                 padding: 0 0 0 0.75em;
+                
+                transition: background 0.5s;
+            }
+            
+            .left-off-canvas-menu:hover li,
+            .left-off-canvas-menu:hover a {
+               color: transparent;
+
+               text-shadow: 0 0 1px #ccc; 
             }
             
             .left-off-canvas-menu li:hover,
@@ -100,13 +129,16 @@
 
             .left-off-canvas-menu a {
                 display: inline-block;
-                width: 115px;
+                width: 150px;
+                padding-left: 17px;
                 margin: 0 0 0 0.5em;
+                
+                transition: color 0.5s, text-shadow 0.5s;
             }
-
+            
             
             .left-off-canvas-menu i {
-                transition: opacity 0.5s, color 0.5s;
+                transition: opacity 0.5s, color 0.5s, text-shadow 0.5s, padding 0.15s;
             }
             
                 .left-off-canvas-menu i::before {
@@ -120,8 +152,6 @@
 
             .left-off-canvas-menu .top-menu i:last-child {
                 cursor: pointer; 
-                
-                transition: padding 0.15s;
             }
         
             .left-off-canvas-menu i:last-child:hover,
@@ -138,6 +168,3 @@
                 color: #08c;
             }
             
-            .left-off-canvas-menu.expanded .top-menu li.active:hover i:first-child {
-                color: #fff;
-            }
